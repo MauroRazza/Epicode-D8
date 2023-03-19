@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+i.fa-solid, i.fa-regular{
+    font-size: 1.5em;
+    color: #838383;
+    margin: 15px;
+}
+i.fa-solid:hover, i.fa-regular:hover{
+    color: #3b3b3b;
+    cursor: pointer;
+}
+button{
+    font-size: 1em;
+    background-color:  #fff;
+    color: #3b3b3b;
+    border: solid 2px #838383;
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin: 10px;
+}
+button:hover{
+    background-color: #3b3b3b;
+    color:  #fff;
+    border: solid 2px #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+h1{
+    font-size: 1.8em;
+}
+h2{
+    margin: 10px 0;
+}
+h3{
+    font-size: 1.4em;
+}
+
+/* Header + Nav */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: rgba(80, 80, 80, 0.1) 0px 10px 30px -10px;
+    padding: 0 200px;
+    z-index: 1;
+}
+header .logo{
+    width: 250px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav img{
+    width: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Main + Left/Nav Article */
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 150px;
+}
+.left-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding-right: 50px;
+    margin-top: 140px;
+}
+.nav-article{
+    display: flex;
+    border-bottom: solid 2px #ebebeb;
+}
+.nav-article > h2{
+    color: #757575;
+    border-bottom: solid 2px #ebebeb;
+    cursor: pointer;
+    padding: 15px 20px;
+    margin: -2px;
+}
+.nav-article > h2:hover{
+    color: #3b3b3b;
+    border-bottom: solid 2px #3b3b3b;
+}
+.nav-article > h2:nth-child(2){
+    color: #3b3b3b;
+    border-bottom: solid 2px #3b3b3b;
+}
+
+/* Box Article */
+
+article{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0;
+}
+article > img{
+    width: 300px;
+    height: 200px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.info-author{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+.info-author > img{
+    width: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.info-author > span{
+    font-size: 1em;
+    padding: 0 10px;
+}
+.info-article{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    width: 40em;
+    height: 300px;
+    padding-right: 50px;
+}
+.info-article > p{
+    font-size: 1.2em;
+    color: #757575;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.info-bottombar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-bottombar > div > span{
+    font-size: 1em;
+    color: #757575;
+    margin: 10px;
+}
+.info-bottombar > div > span:first-of-type{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.active-category{
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Right Bar + Connect Social */
+
+.right-bar{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 50px;
+    border-left: solid 2px #ebebeb;
+}
+.connect-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: solid 2px #ebebeb;
+    padding-bottom: 20px;
+    margin-top: 120px;
+}
+.connect-social i.fa-brands{
+    font-size: 2em;
+    color: #54acee;
+}
+.connect-social i.fa-brands:first-of-type{
+    color: #000000;
+}
+.connect-social i.fa-regular:hover{
+    color: #838383;
+    cursor: auto;
+}
+.connect-social > p{
+    padding: 20px;
+}
+.connect-social > button{
+    font-size: 1em;
+    background-color: #fff;
+    color: #3b3b3b;
+    border: solid 2px #838383;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+.connect-social > button:hover{
+    background-color: #3b3b3b;
+    color: #fff;
+    border: solid 2px #fff;
+}
+.connect-social > button > .fa-brands:first-of-type{
+    font-size: 1.2em;
+    color: #54acee;
+    margin: 0 10px;
+}
+.connect-social > a{
+    color: #8b8b8b;
+    padding: 20px;
+}
+.connect-social > a:hover{
+    color: #000000;
+}
+
+/* Recommended Topics */
+
+.box-content{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+}
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 10px 0;
+}
+.category > span{
+    font-size: 1em;
+    color: #2a2a2a;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 15px;
+    margin: 5px;
+}
+
+/* Who to follow */
+
+.suggested-user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.suggested-user > div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.suggested-user > div > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 10px;
+}
+.suggested-user > div > div > p{
+    font-size: 1em;
+    color: #999999;
+    padding: 5px 0;
+}
+
+/* Recently Saved */
+
+.box-bottombar{
+    margin: 10px 0;
+}
+
+.box-bottombar > div > span:first-of-type{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.box-bottombar > div > span{
+    font-size: 1em;
+    color: #757575;
+    margin: 10px;
+}
+.box-bottombar > div > .fa-solid{
+    font-size: 1em;
+    margin: 0;
+}
+.box-content > a{
+    color: #258e21;
+    margin: 20px 0;
+}
+.box-content > a:hover{
+    color: black;
+}
+
+/* Footer */
+.footer{
+    margin: 10px 0;
+}
+.footer > ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer > ul > li{
+    color: #757475;
+    list-style: none;
+    padding: 20px 20px 20px 0px;
+}
+.footer > ul > li:hover{
+    color: black;
+    cursor: pointer;
+}
